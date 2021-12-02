@@ -1,0 +1,347 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    font-family: 'Open Sans', 'Roboto', Arial, Verdana, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    padding: 0px;
+    margin: 0;
+    background: #fff;
+    text-decoration: none;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/* Bootstrap Override Css */
+
+p {
+    margin: 0 0 20px;
+    line-height: 24px;
+}
+
+hr {
+    border-color: #ddd;
+    border-style: solid;
+    margin: 25px 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6b00;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.grid-item1 {
+    width: 20%;
+}
+
+a:hover {
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    -o-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+}
+
+label {
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bootstrap-tagsinput {
+    margin-bottom: 0px;
+}
+
+.label-info {
+    background-color: #b32017;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.bootstrap-tagsinput .tag {
+    margin: 2px;
+    display: inline-block;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+    outline-offset: 0px;
+    outline: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Roboto', cursive, 'Oswald', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 700;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-family: 'Lilita One', cursive, 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #fff
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 30px;
+    line-height: normal;
+    color: #402009;
+}
+
+h3 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    position: relative;
+}
+
+h4 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    position: relative;
+}
+
+.form-control::-moz-placeholder {
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    border: 0px;
+}
+
+.red {
+    color: #f00;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    position: relative;
+}
+
+.gbl {
+    padding: 25px 0;
+}
+
+.orange-cta {
+    background-color: #ff9933;
+    border: 0px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 0px;
+    padding: 6px 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.orange-cta:hover {
+    background-color: #333;
+    color: #fff;
+    border: 0px;
+    outline: none;
+}
+
+.orange-cta:focus {
+    border: 0px;
+    outline: none;
+}
+
+.dark-cta {
+    background-color: #402009;
+    border: 0px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 0px;
+    padding: 6px 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.dark-cta:hover {
+    background-color: #ff9933;
+    color: #fff;
+    border: 0px;
+    outline: none;
+}
+
+.dark-cta:focus {
+    border: 0px;
+    outline: none;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*--- All Padding And Margin ---*/
+
+.pb0 {
+    padding-bottom: 0px
+}
+
+.pb10 {
+    padding-bottom: 10px
+}
+
+.pb20 {
+    padding-bottom: 20px
+}
+
+.pb30 {
+    padding-bottom: 30px
+}
+
+.pb40 {
+    padding-bottom: 40px
+}
+
+.pb50 {
+    padding-bottom: 50px
+}
+
+.pb60 {
+    padding-bottom: 60px
+}
+
+.pt0 {
+    padding-top: 0px
+}
+
+.pt10 {
+    padding-top: 10px
+}
+
+.pt20 {
+    padding-top: 20px
+}
+
+.pt30 {
+    padding-top: 30px
+}
+
+.pt40 {
+    padding-top: 40px
+}
+
+.pt50 {
+    padding-top: 50px
+}
+
+.pt60 {
+    padding-top: 60px
+}
+
+.ptb20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mb0 {
+    margin-bottom: 0px
+}
+
+.mb10 {
+    margin-bottom: 10px
+}
+
+.mb20 {
+    margin-bottom: 20px
+}
+
+.mb30 {
+    margin-bottom: 30px
+}
+
+.mb40 {
+    margin-bottom: 40px
+}
+
+.mb50 {
+    margin-bottom: 50px
+}
+
+.mb60 {
+    margin-bottom: 60px
+}
+
+.mt0 {
+    margin-top: 0px
+}
+
+.mt10 {
+    margin-top: 10px
+}
+
+.mt20 {
+    margin-top: 20px
+}
+
+.mt30 {
+    margin-top: 30px
+}
+
+.mt40 {
+    margin-top: 40px
+}
+
+.mt50 {
+    margin-top: 50px
+}
+
+.mt60 {
+    margin-top: 60px
+}
+
+
+/*--- Tablet View Css here ---*/
+
+@media (min-width:768px) {
+    .modal-sm {
+        width: 510px
+    }
+    .modal-md {
+        width: 760px
+    }
+    .modal-lg {
+        width: 900px
+    }
+}

@@ -54,6 +54,35 @@ class c_ustomer extends Controller
       return redirect()->route('login');
     }
   }
+  public function update(Request $request){
+
+    // dd( Session::get('user_id'));
+
+    $data = [
+      'country' => $request->input('country'),
+      'state' => $request->state,
+      'phone' => $request->phone,
+     
+
+      'age' => $request->age,
+
+      'address' => $request->address,
+     
+      'email' => $request->email,
+      'surname' => $request->surname,
+      'lastname' => $request->lastname,
+      'firstname' => $request->firstname,
+    
+      
+    ];
+  
+
+    
+    custom::where('id', Session::get('user_id'))
+      ->update($data);
+      // Session::flash('flash', 'Registration Updated !!!.');
+      return back()->with('success',  "Registration Updated !!!");
+  }
   public function register(Request $request)
   {
     $this->validate($request, [
@@ -150,6 +179,8 @@ class c_ustomer extends Controller
     $product = products::find($req->id);
     return response()->json(['error' => false, 'msg' => 'desc successful', 'data' => $product]);
   }
+
+
 
 
   public function addToCart($id)
@@ -292,6 +323,19 @@ class c_ustomer extends Controller
   public function showCart()
   {
     return view('cart');
+    // return session('cart');
+  }
+
+  
+
+  public function showcheckout()
+  {
+    return view('checkout1');
+    // return session('cart');
+  }
+  public function showcheckout2()
+  {
+    return view('checkout2');
     // return session('cart');
   }
   public function updateCart(Request $request)

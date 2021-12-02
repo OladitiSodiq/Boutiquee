@@ -1,0 +1,110 @@
+﻿
+header.siteHeader{
+    background: #fff; width: 100%; /*position: sticky;*/ top: 0; z-index: 99;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+header.siteHeader .container:after{content: ""; display: table; clear: both;}
+header.siteHeader .header-logo {padding:15px 0px; position: relative; max-width: 236px; float: left;}
+
+header.siteHeader .login-box{display:inline-block; position: absolute; right:15px; top:30px; font-size: 22px; font-weight: 700;}
+header.siteHeader .login-box .fa{font-size: 30px; padding-right:5px; position: relative; top:4px;}
+
+header.siteHeader > .inner {position: relative;}
+header.siteHeader nav.nav {width: auto; float: right; font-weight: 300; position: relative; top: 90px;}
+header.siteHeader nav.nav a {text-decoration: none; display: inline-block;}
+
+header.siteHeader nav.nav ul.l0 {width: auto; margin: 0px; padding: 0px; float: right;}
+header.siteHeader nav.nav .listless li {
+    list-style: none; margin: 0px; display: block; position: relative; 
+    float: left; height: auto; padding:0 20px; border-right:2px solid #333;
+}
+header.siteHeader nav.nav .listless li:last-child{padding-right:0px; border-right:0px;}
+header.siteHeader nav#mainNav ul.l0 li.l0 a {color: #333333; position: relative; font-size: 22px; padding: 0px 0px; font-weight: 700;}
+header.siteHeader nav#mainNav ul.l0 li.l0:last-child a {padding-right: 0px;}
+header.siteHeader nav#mainNav ul.l0 li.l0:hover .childMenu {
+    visibility: visible; opacity: 1; transform: translateY(0px);
+    -webkit-transform: translateY(0px); -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px); -o-transform: translateY(0px);    
+}
+header.siteHeader nav#mainNav ul.l0 li.l0:hover > a {color: #ff6b00;}
+header.siteHeader nav#mainNav ul.l0 li.l0.active a, header.siteHeader nav#mainNav ul.l0 li.l0 a:hover {color: #ff6b00;}
+
+.childMenu {
+    position: absolute; left: 0; top: 100%; z-index: 1001; width: 100%; margin: 0px;
+    padding: 0px; visibility: hidden; opacity: 0; background: #F1F1F1;
+    box-shadow: 0 6px 30px -10px rgba(0, 0, 0, 0.6); width: 220px;
+
+    position: absolute; left: 0; top: 100%; z-index: 1001; width: 100%; margin: 0px;
+    padding: 10px; visibility: hidden; opacity: 0; width: 220px; transform: translateY(-20px);
+    -webkit-transform: translateY(-20px); -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px); -o-transform: translateY(-20px);
+    -moz-box-shadow: 0 6px 30px -10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 6px 30px -10px rgba(0,0,0,0.6);
+    box-shadow: 0 6px 30px -10px rgba(0,0,0,0.6);    
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.childMenu:after {content: "\f0de"; font-family: 'FontAwesome'; top: -10px; font-size: 28px; line-height: 26px; position: absolute; left: 20px; color:#F1F1F1}
+.childMenu li {width: 100%; border-bottom: 1px solid #000; border-right: 0px !important;}
+.childMenu li a {padding: 5px 0 !important; display: block !important; color: #000 !important; height: auto !important; font-size: 16px !important;}
+.childMenu li a:hover {color: #ff6b00 !important;}
+.childMenu li:hover .sub-childMenu {visibility: visible; opacity: 1;}
+.childMenu li:hover .sub-childMenu li .sub-child-subMenu {visibility: hidden; opacity: 0;}
+.childMenu li:hover .sub-childMenu li:hover .sub-child-subMenu {visibility: visible; opacity: 1;}
+.childMenu li:last-child {border-bottom: 0px;}
+.childMenu li:last-child a {padding-bottom: 0 !important;}
+.childMenu .sub-childMenu {
+    left: 100%; top: 0px; position: absolute; z-index: 9; width: 100%; margin: 0px; padding: 0px;
+    box-shadow: 0 6px 30px -10px rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0;
+}
+
+.mobile-nav .mm-panels .mm-panel {width: 100%;}
+header.siteHeader .toggle {
+    width: auto; padding: 5px, 10px, 5px, 10px; color: #000; float: right; cursor: pointer;
+    font-weight: 400; font-size: 20px; position: absolute; right: 15px; top: 34px; text-transform: uppercase;
+}
+
+.hamburger-menu {margin: auto; width: 32px; height: 24px; cursor: pointer; float: right;}
+.hamburger-menu .bar, .hamburger-menu .bar:after, .hamburger-menu .bar:before {width: 30px; height: 3px;}
+.hamburger-menu .bar {position: relative; transform: translateY(8px); background: #402009; transition: all 0ms 300ms;}
+.hamburger-menu .bar::before {
+    content: ""; position: absolute; left: 0; bottom: 8px; background: #402009;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hamburger-menu .bar::after {
+    content: ""; position: absolute; left: 0; top: 8px; background: #402009;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mm-opening .hamburger-menu .bar {background: rgba(255, 255, 255, 0);}
+.mm-opening .hamburger-menu .bar::after {
+    top: 0; transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.mm-opening .hamburger-menu .bar::before {
+    bottom: 0; transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media screen and (min-width: 768px) {
+    header.siteHeader .toggle {display: none;}
+}
+
+@media screen and (max-width: 1080px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    header.siteHeader .header-logo {max-width: 200px;}
+    .childMenu{top: 0px; position: relative; visibility: visible; opacity: 1; background: #0083c1;}
+    .childMenu li{ border-bottom: inherit;}
+    .childMenu li a{color: #fff !important;}
+    .childMenu li .fa-angle-right{ display: none; }
+    header.siteHeader nav#mainNav {display: none;}
+
+    header.siteHeader .toggle {top: 45px;}
+}
+
+@media screen and (max-width: 768px){
+    header.siteHeader .header-logo {max-width: 150px;}
+    header.siteHeader .login-box{right:70px;}
+}

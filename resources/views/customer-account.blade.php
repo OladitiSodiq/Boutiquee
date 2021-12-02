@@ -25,7 +25,7 @@
             @include('sidebar')
           </div>
           <div class="col-lg-8 col-xl-9 pl-lg-3">
-            <form action="/account_update" method="post">
+            
                   
               @if ($errors->any())
                   <div >
@@ -44,12 +44,14 @@
                       </div>
                   @endif
               </div>
-                 {{ csrf_field() }}
+                
           
             <div class="block-header mb-5">
               <h5>Personal details</h5>
             </div>
-            <form class="content-block" >
+            <form id="form"  class="content-block" autocomplete="off" method="POST"   action="{{ route('customer.update') }}" >
+
+              {{ csrf_field() }}
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
@@ -118,7 +120,7 @@
                     <input id="" type="text" name="age" value="{{ $user->age }}" class="form-control">
                   </div>
                 </div>
-                <input type="hidden" name="user_id" value="{{ $user->id }}">
+                <!-- <input type="hidden" name="user_id" value="{{ $user->id }}"> -->
                 <div class="col-sm-12 text-center">
                   <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>Save changes</button>
                 </div>

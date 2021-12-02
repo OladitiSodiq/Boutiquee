@@ -50,7 +50,7 @@
           <li class="nav-item"><a href="category.html" class="nav-link">Shop</a>
           </li>
           <!-- Megamenu-->
-          <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="nav-link">Template<i class="fa fa-angle-down"></i></a>
+          <!-- <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="nav-link">Template<i class="fa fa-angle-down"></i></a>
             <div class="dropdown-menu megamenu">
               <div class="row">
                 <div class="col-lg-9">
@@ -143,10 +143,10 @@
                 </div>
               </div>
             </div>
-          </li>
+          </li> -->
           <!-- /Megamenu end-->
           <!-- Multi level dropdown    -->
-          <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="http://example.com/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">Dropdown<i class="fa fa-angle-down"></i></a>
+          <!-- <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="http://example.com/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">Dropdown<i class="fa fa-angle-down"></i></a>
             <ul aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
               <li><a href="#" class="dropdown-item">Action</a></li>
               <li><a href="#" class="dropdown-item">Another action</a></li>
@@ -167,7 +167,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> -->
           <!-- Multi level dropdown end-->
           <li class="nav-item"><a href="blog.html" class="nav-link">Blog </a>
           </li>
